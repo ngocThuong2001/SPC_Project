@@ -1,18 +1,13 @@
 import React from "react";
 import {
-  Card,
-  CardBody,
-  CardHeader,
   Typography,
   Button,
   IconButton,
   Input,
   Textarea,
 } from "@material-tailwind/react";
-import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, contactData } from "@/data";
 import contactStaffData from "@/data/contactStaff-data";
 export function Contact() {
   return (

@@ -1,11 +1,14 @@
-import { Home, About, Event, Service, Profile, SignIn, SignUp, Contact } from "@/pages";
+import { Home, About, Event, Service, Profile, Contact } from "@/pages";
 import {
   HomeIcon,
   UserCircleIcon,
   CalendarDaysIcon,
   WrenchScrewdriverIcon,
   PhoneIcon,
+  AcademicCapIcon,
 } from "@heroicons/react/24/solid";
+import Dashboard from "./pages/Dashboard";
+
 
 export const routes = [
   {
@@ -40,12 +43,18 @@ export const routes = [
     path: "/contact",
     element: <Contact />,
   },
+
+  {
+    icon: AcademicCapIcon,
+    name: "admin",
+    path: "/admin",
+    element: <Dashboard />,
+  },
   // {
   //   icon: DocumentTextIcon,
-  //   name: "about",
-  //   href: "",
-  //   target: "_blank",
-  //   element: "",
+  //   name: "Admin",
+  //   path: "/admin",
+  //   element: <Dashboard />,
   // },
 ];
 
